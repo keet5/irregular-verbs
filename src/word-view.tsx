@@ -16,7 +16,9 @@ export default function WordView(props: Props) {
     ?.slice(-1)
     .map(
       (a) =>
-        new Audio(new URL(`/public/audio/${a.audioSrc}`, import.meta.url).href)
+        new Audio(
+          new URL(`/src/assets/audio/${a.audioSrc}`, import.meta.url).href
+        )
     )
 
   const click = () => audio![0].play()
