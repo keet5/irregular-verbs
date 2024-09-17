@@ -1,0 +1,7 @@
+tr:nth-child(odd) {
+  @apply bg-content1/90;
+}
+
+td:not(:last-child) {
+  @apply border-r border-content2 px-2;
+}
