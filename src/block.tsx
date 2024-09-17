@@ -12,7 +12,7 @@ export default function Block(props: Props) {
     <div class={`card`}>
       <div class="card-title">{props.block.principle}</div>
       {/* <div class="card-body grid grid-cols-3 gap-x-2 "> */}
-      <table>
+      <table class="w-full">
         <For each={props.block.wordList}>
           {(wordForms) => (
             <tr class={style.tr}>
