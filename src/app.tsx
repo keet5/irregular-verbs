@@ -6,7 +6,7 @@ import wordStructure from "./word-structure"
 export default function App() {
   return (
     <>
-      <main class="container m-auto p-2 flex gap-2 flex-col">
+      <main class="container m-auto p-2 flex gap-2 flex-col max-w-[600px]">
         <For each={wordStructure}>
           {(item, index) => <Block block={item} />}
         </For>
